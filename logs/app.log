@@ -1,0 +1,182 @@
+2026-06-10 07:46:35,212 - INFO - Model loaded successfully.
+2026-06-10 13:45:41,571 - INFO - Model loaded successfully.
+2026-06-10 13:45:41,991 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.15:5000
+2026-06-10 13:45:41,991 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-10 13:45:41,997 - INFO -  * Restarting with stat
+2026-06-10 13:45:46,649 - INFO - Model loaded successfully.
+2026-06-10 13:45:46,703 - WARNING -  * Debugger is active!
+2026-06-10 13:45:46,716 - INFO -  * Debugger PIN: 750-899-693
+2026-06-10 13:47:29,350 - INFO - Model loaded successfully.
+2026-06-10 13:47:29,484 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 13:47:29,484 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-10 13:47:35,439 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:35] "GET / HTTP/1.1" 200 -
+2026-06-10 13:47:35,460 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:35] "GET / HTTP/1.1" 200 -
+2026-06-10 13:47:35,808 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:35] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-10 13:47:35,824 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:36,516 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:36,528 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:43,860 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:43] "GET /predict HTTP/1.1" 200 -
+2026-06-10 13:47:43,933 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:44,039 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:48,750 - INFO - Log saved: Normal
+2026-06-10 13:47:48,759 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:48] "POST /predict HTTP/1.1" 200 -
+2026-06-10 13:47:48,802 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:48,903 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:51,682 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:51] "GET /logs HTTP/1.1" 200 -
+2026-06-10 13:47:51,726 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:51,806 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:56,816 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:56] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 13:47:56,876 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:57,895 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:57] "GET /predict HTTP/1.1" 200 -
+2026-06-10 13:47:57,939 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:58,077 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:59,422 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:59] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 13:47:59,484 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:47:59,626 - INFO - 127.0.0.1 - - [10/Jun/2026 13:47:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:03,499 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:03] "GET /logs HTTP/1.1" 200 -
+2026-06-10 13:48:03,544 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:03,616 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:05,843 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:05] "GET /upload HTTP/1.1" 200 -
+2026-06-10 13:48:05,886 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:05,955 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:09,450 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:09] "GET /about HTTP/1.1" 200 -
+2026-06-10 13:48:09,508 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:14,171 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:14] "GET / HTTP/1.1" 200 -
+2026-06-10 13:48:14,217 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 13:48:14,430 - INFO - 127.0.0.1 - - [10/Jun/2026 13:48:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:02:37,329 - INFO - Model loaded successfully.
+2026-06-10 15:02:37,557 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-10 15:02:37,558 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-10 15:02:43,348 - INFO - 127.0.0.1 - - [10/Jun/2026 15:02:43] "GET / HTTP/1.1" 200 -
+2026-06-10 15:02:43,576 - INFO - 127.0.0.1 - - [10/Jun/2026 15:02:43] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-10 15:03:07,662 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:07] "GET /upload HTTP/1.1" 200 -
+2026-06-10 15:03:07,714 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:07,779 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:10,193 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:10] "GET /predict HTTP/1.1" 200 -
+2026-06-10 15:03:10,232 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:10,575 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:15,290 - INFO - Log saved: Normal
+2026-06-10 15:03:15,443 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:15] "POST /predict HTTP/1.1" 200 -
+2026-06-10 15:03:15,484 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:15,654 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:21,944 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:21] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 15:03:21,984 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:32,379 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:32] "GET /predict HTTP/1.1" 200 -
+2026-06-10 15:03:32,500 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:38,050 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:38] "GET /logs HTTP/1.1" 200 -
+2026-06-10 15:03:38,087 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:38,143 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:39,076 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:39] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 15:03:39,115 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:39,201 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:40,103 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:40] "GET /predict HTTP/1.1" 200 -
+2026-06-10 15:03:40,143 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:40,205 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:41,616 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:41] "GET /upload HTTP/1.1" 200 -
+2026-06-10 15:03:41,651 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:41,699 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:03:57,798 - INFO - 127.0.0.1 - - [10/Jun/2026 15:03:57] "[31m[1mPOST /upload HTTP/1.1[0m" 413 -
+2026-06-10 15:04:01,398 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:03,020 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:03] "GET /upload HTTP/1.1" 200 -
+2026-06-10 15:04:03,061 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:03,110 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:15,763 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:15] "[31m[1mPOST /upload HTTP/1.1[0m" 413 -
+2026-06-10 15:04:17,901 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:18,430 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:19,419 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:19] "GET / HTTP/1.1" 200 -
+2026-06-10 15:04:19,457 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:19,501 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:20,628 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:20] "GET /about HTTP/1.1" 200 -
+2026-06-10 15:04:20,657 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:20,718 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:24,946 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:24] "GET /logs HTTP/1.1" 200 -
+2026-06-10 15:04:24,976 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:25,021 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:26,802 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:26] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 15:04:26,835 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:26,935 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:33,254 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:33] "GET /predict HTTP/1.1" 200 -
+2026-06-10 15:04:33,295 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:04:33,363 - INFO - 127.0.0.1 - - [10/Jun/2026 15:04:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:06:46,845 - INFO - Log saved: DoS
+2026-06-10 15:06:46,848 - INFO - 127.0.0.1 - - [10/Jun/2026 15:06:46] "POST /predict HTTP/1.1" 200 -
+2026-06-10 15:06:46,926 - INFO - 127.0.0.1 - - [10/Jun/2026 15:06:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:06:46,993 - INFO - 127.0.0.1 - - [10/Jun/2026 15:06:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:07:02,388 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:02] "GET /logs HTTP/1.1" 200 -
+2026-06-10 15:07:02,420 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:02] "GET /logs HTTP/1.1" 200 -
+2026-06-10 15:07:02,459 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:07:02,521 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:07:09,145 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:07:11,363 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:11] "GET /dashboard HTTP/1.1" 200 -
+2026-06-10 15:07:11,406 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-10 15:07:11,518 - INFO - 127.0.0.1 - - [10/Jun/2026 15:07:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:30:06,409 - INFO - Model loaded successfully.
+2026-06-24 12:30:06,537 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-06-24 12:30:06,537 - INFO - [33mPress CTRL+C to quit[0m
+2026-06-24 12:30:28,877 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:28] "GET / HTTP/1.1" 200 -
+2026-06-24 12:30:29,236 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-24 12:30:34,990 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:34] "GET /about HTTP/1.1" 200 -
+2026-06-24 12:30:35,024 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:30:39,877 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:39] "GET /upload HTTP/1.1" 200 -
+2026-06-24 12:30:40,030 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:30:40,684 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:30:50,177 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:50] "GET /predict HTTP/1.1" 200 -
+2026-06-24 12:30:50,558 - INFO - 127.0.0.1 - - [24/Jun/2026 12:30:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:31:11,760 - INFO - Log saved: Normal
+2026-06-24 12:31:11,776 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:11] "POST /predict HTTP/1.1" 200 -
+2026-06-24 12:31:11,839 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:31:11,934 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:31:16,550 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:16] "GET /logs HTTP/1.1" 200 -
+2026-06-24 12:31:16,587 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:31:16,635 - INFO - 127.0.0.1 - - [24/Jun/2026 12:31:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:02,851 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:02] "GET / HTTP/1.1" 200 -
+2026-06-24 12:32:02,946 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:03,033 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:07,737 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:07] "GET / HTTP/1.1" 200 -
+2026-06-24 12:32:08,017 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-24 12:32:08,173 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-24 12:32:11,606 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:11] "GET /about HTTP/1.1" 200 -
+2026-06-24 12:32:11,631 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:12,935 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:12] "GET / HTTP/1.1" 200 -
+2026-06-24 12:32:12,960 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:39,437 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:39] "GET / HTTP/1.1" 200 -
+2026-06-24 12:32:41,188 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:41] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-24 12:32:55,083 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:55] "GET / HTTP/1.1" 200 -
+2026-06-24 12:32:55,213 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:32:55,308 - INFO - 127.0.0.1 - - [24/Jun/2026 12:32:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-06-24 12:33:49,365 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:49] "GET /about HTTP/1.1" 200 -
+2026-06-24 12:33:49,394 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:33:49,451 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:33:50,405 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:50] "GET /upload HTTP/1.1" 200 -
+2026-06-24 12:33:50,425 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:33:50,466 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:33:58,385 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:58] "GET /predict HTTP/1.1" 200 -
+2026-06-24 12:33:58,410 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:33:58,581 - INFO - 127.0.0.1 - - [24/Jun/2026 12:33:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:34:00,955 - INFO - Log saved: Normal
+2026-06-24 12:34:00,958 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:00] "POST /predict HTTP/1.1" 200 -
+2026-06-24 12:34:01,007 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:34:01,097 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:34:03,039 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:03] "GET /predict HTTP/1.1" 200 -
+2026-06-24 12:34:03,071 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:34:03,122 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:34:03,738 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:03] "GET /dashboard HTTP/1.1" 200 -
+2026-06-24 12:34:03,759 - INFO - 127.0.0.1 - - [24/Jun/2026 12:34:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:31,298 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:31] "GET /about HTTP/1.1" 200 -
+2026-06-24 12:35:31,327 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:31,377 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:32,117 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:32] "GET / HTTP/1.1" 200 -
+2026-06-24 12:35:32,142 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:32,173 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:55,285 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:55] "GET /predict HTTP/1.1" 200 -
+2026-06-24 12:35:55,301 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 12:35:55,358 - INFO - 127.0.0.1 - - [24/Jun/2026 12:35:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-24 13:23:53,057 - INFO - Log saved: Normal
+2026-06-24 13:23:53,139 - INFO - 127.0.0.1 - - [24/Jun/2026 13:23:53] "POST /predict HTTP/1.1" 200 -
+2026-06-24 13:23:53,866 - INFO - 127.0.0.1 - - [24/Jun/2026 13:23:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
