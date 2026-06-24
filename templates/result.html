@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result — AI-IDS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="/">⚡ AI-IDS</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/predict">Predict</a></li>
+        <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="/logs">Logs</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="result-wrap">
+
+    <!-- Badge -->
+    <div class="text-center mb-4 fade-up">
+      {% if prediction == 'Normal' %}
+        <div class="result-badge normal">✅</div>
+        <h2 class="result-title normal">NORMAL TRAFFIC</h2>
+        <p style="color:var(--muted)">No intrusion detected. Connection appears safe.</p>
+      {% else %}
+        <div class="result-badge attack">🚨</div>
+        <h2 class="result-title attack">{{ prediction }} ATTACK DETECTED</h2>
+        <p style="color:var(--muted)">Potential intrusion identified. Review connection details below.</p>
+      {% endif %}
+    </div>
+
+    <!-- Confidence Card -->
+    <div class="ids-card fade-up fade-up-1 mb-4">
+      <div class="d-flex justify-content-between align-items-center mb-1">
+        <span style="color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.6px">Model Confidence</span>
+        <span style="font-size:1.4rem;font-weight:800;
+          color:{% if prediction=='Normal' %}var(--success){% else %}var(--danger){% endif %}">
+          {{ "%.1f"|format(confidence) }}%
+        </span>
+      </div>
+      <div class="confidence-bar-wrap">
+        <div class="confidence-bar {% if prediction=='Normal' %}normal{% else %}attack{% endif %}"
+             id="confBar" style="width:0%"></div>
+      </div>
+      <div class="d-flex justify-content-between" style="font-size:.75rem;color:var(--muted);margin-top:4px">
+        <span>0%</span><span>50%</span><span>100%</span>
+      </div>
+    </div>
+
+    <!-- Attack Type Info -->
+    {% if prediction != 'Normal' %}
+    <div class="ids-card fade-up fade-up-2 mb-4" style="border-color:rgba(255,71,87,.3)">
+      <h6 style="color:var(--danger);margin-bottom:12px;text-transform:uppercase;letter-spacing:.6px;font-size:.8rem">⚠️ Attack Category Info</h6>
+      {% if prediction == 'DoS' %}
+        <p style="color:var(--text);margin:0">
+          <strong style="color:var(--warning)">Denial of Service (DoS)</strong> — Attacker floods the target to make services unavailable.
+          Includes: SYN flood, Ping of Death, Smurf, Teardrop attacks.
+        </p>
+      {% elif prediction == 'Probe' %}
+        <p style="color:var(--text);margin:0">
+          <strong style="color:var(--warning)">Probe / Scan</strong> — Attacker is scanning the network to gather information before a real attack.
+          Includes: port scans, IP sweeps, vulnerability probes.
+        </p>
+      {% elif prediction == 'R2L' %}
+        <p style="color:var(--text);margin:0">
+          <strong style="color:var(--warning)">Remote to Local (R2L)</strong> — Unauthorized access from a remote machine, exploiting vulnerabilities
+          to gain local user access.
+        </p>
+      {% elif prediction == 'U2R' %}
+        <p style="color:var(--text);margin:0">
+          <strong style="color:var(--warning)">User to Root (U2R)</strong> — Attacker has local user access and is trying to gain root/admin privileges.
+          Highly dangerous — privilege escalation attack.
+        </p>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Input Summary -->
+    <div class="ids-card fade-up fade-up-3 mb-4">
+      <h6 style="color:var(--muted);margin-bottom:14px;text-transform:uppercase;letter-spacing:.6px;font-size:.8rem">📋 Input Features Summary</h6>
+      <div style="overflow-x:auto">
+        <table class="detail-table">
+          <thead>
+            <tr><th>Feature</th><th>Value</th><th>Feature</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            {% set items = details.items()|list %}
+            {% for i in range(0, items|length, 2) %}
+            <tr>
+              <td style="color:var(--muted);font-size:.8rem">{{ items[i][0] }}</td>
+              <td><strong>{{ items[i][1] }}</strong></td>
+              {% if i+1 < items|length %}
+              <td style="color:var(--muted);font-size:.8rem">{{ items[i+1][0] }}</td>
+              <td><strong>{{ items[i+1][1] }}</strong></td>
+              {% else %}
+              <td></td><td></td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="d-flex gap-3 flex-wrap fade-up">
+      <a href="/predict" class="btn-analyze" style="text-decoration:none;display:inline-flex;align-items:center">
+        🔄 New Prediction
+      </a>
+      <a href="/logs" class="btn-secondary-ids" style="text-decoration:none;display:inline-flex;align-items:center">
+        📋 View All Logs
+      </a>
+      <a href="/dashboard" class="btn-secondary-ids" style="text-decoration:none;display:inline-flex;align-items:center">
+        📊 Dashboard
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Animate confidence bar on load
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      document.getElementById('confBar').style.width = '{{ "%.1f"|format(confidence) }}%';
+    }, 300);
+  });
+</script>
+</body>
+</html>

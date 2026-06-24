@@ -1,0 +1,7 @@
+Best Model: XGBoost
+
+Model                  Accuracy         F1
+---------------------------------------------
+Decision Tree            0.9973     0.9973
+Random Forest            0.9989     0.9989
+XGBoost                  0.9991     0.9991
