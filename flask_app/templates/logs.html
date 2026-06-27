@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs - AI-IDS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">⚡ AI-IDS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/upload">Upload</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/predict">Predict</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/logs">Logs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pb-5">
+        <div class="mb-4 fade-up">
+            <h2>📋 Detection Logs</h2>
+            <p class="text-muted">Comprehensive history of all detected connections and threats</p>
+        </div>
+
+        <div class="ids-card fade-up" style="animation-delay: 0.1s; padding: 0;">
+            <div style="overflow-x: auto;">
+                <table class="ids-table" style="margin: 0;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Timestamp</th>
+                            <th>Source IP</th>
+                            <th>Destination IP</th>
+                            <th>Prediction</th>
+                            <th>Attack Type</th>
+                            <th>Confidence (%)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for log in logs %}
+                        <tr style="{% if log.attack_type != 'Normal' %}background-color: rgba(239, 68, 68, 0.05); border-left: 3px solid var(--danger);{% else %}background-color: rgba(16, 185, 129, 0.05); border-left: 3px solid var(--success);{% endif %}">
+                            <td><strong>#{{ log.id }}</strong></td>
+                            <td style="font-size: 0.85rem;">{{ log.timestamp }}</td>
+                            <td style="font-family: monospace; font-size: 0.85rem;">{{ log.source_ip }}</td>
+                            <td style="font-family: monospace; font-size: 0.85rem;">{{ log.destination_ip }}</td>
+                            <td>
+                                <span class="badge" style="{% if log.prediction == 'Normal' %}background: rgba(16, 185, 129, 0.2); color: var(--success);{% else %}background: rgba(239, 68, 68, 0.2); color: var(--danger);{% endif %}">
+                                    {{ log.prediction }}
+                                </span>
+                            </td>
+                            <td><strong>{{ log.attack_type }}</strong></td>
+                            <td style="font-weight: 700;">{{ "%.2f"|format(log.confidence) }}%</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
